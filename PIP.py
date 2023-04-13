@@ -84,3 +84,30 @@ names=["joy","mumbi","joe","sam"]
 names.clear()
 print(names)
 
+# splintng a string using split() this method splits a string into substrings based on a 
+#delimiter and returns a list of substrings
+
+myString="Hello world"
+myList=myString.split()
+print(myList)
+
+#splintig a string into a list using the splitlines()this method is used to split
+#string into a lit of lines based on the newline character
+
+myString="hello\nworld"
+myList=myString.splitlines()
+print(myList)
+
+#splinting a string into a list using regular expressions with the (re)module
+
+import re
+myString="hello world"
+myList=re.split('/s', myString )
+print(myString)
+
+#to split a string into a list using the partition() it splits a string into three
+#parts based on a separator and returns a tuple containing these parts
+
+myString="hello:world"
+myList=myString.partition(':')
+print(myList)
